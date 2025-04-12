@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_notes_app/injection_container.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 
 import 'core/theme/app_theme.dart';
@@ -14,11 +15,14 @@ void main() async {
   // Initialize Hive
   await Hive.initFlutter();
 
-  runApp(const MyApp());
+  // Initialize dependencies
+  init();
+
+  runApp(const NotesApp());
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+class NotesApp extends StatelessWidget {
+  const NotesApp({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
