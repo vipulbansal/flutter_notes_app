@@ -23,7 +23,8 @@ class NotesLoaded extends NoteState {
 class NoteLoaded extends NoteState {
   final Note note;
 
-  const NoteLoaded({required this.note});
+
+   NoteLoaded({required this.note});
 
   @override
   List<Object> get props => [note];

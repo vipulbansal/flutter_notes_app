@@ -11,7 +11,6 @@ class GetAllNotesEvent extends NoteEvent {}
 
 class GetNoteEvent extends NoteEvent {
   final String id;
-
   const GetNoteEvent({required this.id});
 
   @override

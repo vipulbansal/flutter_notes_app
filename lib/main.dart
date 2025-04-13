@@ -4,6 +4,7 @@ import 'package:flutter_notes_app/features/notes/presentation/bloc/note_bloc.dar
 import 'package:flutter_notes_app/injection_container.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 
+import 'core/router/app_router.dart';
 import 'core/theme/app_theme.dart';
 import 'features/notes/data/models/note_model.dart';
 import 'features/notes/presentation/bloc/theme_cubit.dart';
@@ -19,7 +20,7 @@ void main() async {
   Hive.registerAdapter(NoteModelAdapter());
 
   // Initialize dependencies
-  init();
+  await init();
 
   runApp(const NotesApp());
 }
@@ -36,13 +37,13 @@ class NotesApp extends StatelessWidget {
       ],
       child: BlocBuilder<ThemeCubit, ThemeState>(
         builder: (context, state) {
-          return MaterialApp(
+          return MaterialApp.router(
             title: 'Notes App',
             debugShowCheckedModeBanner: false,
             theme: AppTheme.lightTheme,
             darkTheme: AppTheme.darkTheme,
             themeMode: state.themeMode,
-            home:  Container(),
+            routerConfig: AppRouter.router,
           );
         },
       ),
