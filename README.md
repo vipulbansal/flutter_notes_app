@@ -5,3 +5,8 @@
   <img src="https://img.shields.io/badge/Clean_Architecture-16a34a?style=for-the-badge" alt="Clean Architecture"/>
   <img src="https://img.shields.io/badge/BLoC-5a0fc8?style=for-the-badge" alt="BLoC"/>
 </div>
+
+## Overview
+
+**Flutter Notes App** is a simple notes app. The application showcases the implementation of **Clean Architecture** principles, with **BLoC pattern** for state management, **GetIt** for dependency injection, and **Hive** for fast, efficient local storage.
+
