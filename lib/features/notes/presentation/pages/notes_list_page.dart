@@ -14,7 +14,6 @@ class NotesListPage extends StatefulWidget {
 }
 
 class _NotesListPageState extends State<NotesListPage> {
-  late NoteBloc _noteBloc;
 
   @override
   void initState() {
@@ -26,7 +25,7 @@ class _NotesListPageState extends State<NotesListPage> {
   void didChangeDependencies() {
     super.didChangeDependencies();
     print('Note list init state called');
-    _noteBloc = context.read<NoteBloc>(); // 🔒 capture once, safely
+
   }
 
   @override
@@ -94,13 +93,6 @@ class _NotesListPageState extends State<NotesListPage> {
                   note: note,
                   onTap: () async {
                     await context.pushNamed('noteDetail', pathParameters: {'id': note.id});
-                    // then((_){
-                    //   if (mounted) {
-                    //     WidgetsBinding.instance.addPostFrameCallback((_) {
-                    //       _noteBloc.add(GetAllNotesEvent());
-                    //     });
-                    //   }
-                    // });
                   },
                   onDelete: () {
                     showDialog(
