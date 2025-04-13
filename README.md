@@ -10,3 +10,48 @@
 
 **Flutter Notes App** is a simple notes app. The application showcases the implementation of **Clean Architecture** principles, with **BLoC pattern** for state management, **GetIt** for dependency injection, and **Hive** for fast, efficient local storage.
 
+
+## 📊 Technical Architecture
+
+### 🔷 Clean Architecture Implementation
+
+The application follows **Uncle Bob's Clean Architecture** principles to ensure:
+
+```
+                  💎 Presentation Layer 💎
+                           ↑
+                           |
+                  💠 Domain Layer 💠
+                           ↑
+                           |
+                  🔹 Data Layer 🔹
+```
+
+> **"The code structure is the most important aspect of any software system. It defines how the application will evolve over time."**
+
+#### 📁 Project Structure
+
+```
+lib/
+├── core/
+│   ├── error/
+│   ├── router/
+│   ├── theme/
+│   ├── usecases/
+│   └── utils/
+└── features/
+    └── notes/
+        ├── data/
+        │   ├── datasources/
+        │   ├── models/
+        │   └── repositories/
+        ├── domain/
+        │   ├── entities/
+        │   ├── repositories/
+        │   └── usecases/
+        └── presentation/
+            ├── bloc/
+            ├── pages/
+            └── widgets/
+```
+
