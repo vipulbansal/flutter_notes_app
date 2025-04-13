@@ -4,7 +4,10 @@
   <img src="https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white" alt="Dart"/>
   <img src="https://img.shields.io/badge/Clean_Architecture-16a34a?style=for-the-badge" alt="Clean Architecture"/>
   <img src="https://img.shields.io/badge/BLoC-5a0fc8?style=for-the-badge" alt="BLoC"/>
+  <img src="https://img.shields.io/badge/GoRouter-00bcd4?style=for-the-badge" alt="GoRouter"/>
+  <img src="https://img.shields.io/badge/Hive-FFB300?style=for-the-badge&logo=hive&logoColor=white" alt="Hive"/>
 </div>
+
 
 ## Overview
 
@@ -27,7 +30,6 @@ The application follows **Uncle Bob's Clean Architecture** principles to ensure:
                   🔹 Data Layer 🔹
 ```
 
-> **"The code structure is the most important aspect of any software system. It defines how the application will evolve over time."**
 
 #### 📁 Project Structure
 
