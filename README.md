@@ -8,6 +8,11 @@
   <img src="https://img.shields.io/badge/Hive-FFB300?style=for-the-badge&logo=hive&logoColor=white" alt="Hive"/>
 </div>
 
+<div align="center">
+  <a href="https://play.google.com/store/apps/details?id=com.vipulsoftwares.notesapp.flutter_notes_app">
+    <img src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png" alt="Get it on Google Play" width="200"/>
+  </a>
+</div>
 
 ## Overview
 
